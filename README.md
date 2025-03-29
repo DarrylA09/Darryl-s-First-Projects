@@ -18,9 +18,7 @@ functionality.
 
 [Usage](#usage)
 
-[Screenshots](#screenshots)
-
-[Credits](#credits)
+[URL To GitHub Repository](#url-to-github-repository)
 
 ## Description
 This project is a collection of various apps that was created for my HyperionDev Software Engineer Bootcamp course. The apps
@@ -36,19 +34,20 @@ Below are the apps and short description of it functionality.
 Here are are the step to setup and run this project locally:
 
 **Prerequisites**
+
 Ensure you have the following installed:
 
-Python 3.12.9 or later
+  * Python 3.12.9 or later
 
-Git
+  * Git
 
-SQLite3
+  * SQLite3
 
-Pip
+  * Pip
 
-Django 5.1.6 or later
+  * Django 5.1.6 or later
 
-Bootsrap
+  * Bootsrap
 
 **Step 1: Clone the Repository**
 
@@ -91,23 +90,72 @@ Bootsrap
 
    my_django\Scripts\activate
 
-**Step 2: Here are the key features of the project: 
+**Step 2: Here are the key features of the project:**
 
-**Blog App
-1. http://127.0.0.1:8000/admin/  for admin
-2. http://127.0.0.1:8000/blog/ - to view blog posts
-3. http://127.0.0.1:8000/polls/auth/login/ polls login
+**Blog App**
+1. Ability to add posts for the blog via Django admin. http://127.0.0.1:8000/admin/ 
+   
+   ![Blog Admin](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Blog%20Admin.png)
+ 
+2. Ability to add a post for the blog page.
 
-http://127.0.0.1:8000/polls/  polls home page
-http://127.0.0.1:8000/polls/3/results/   - poll results
-4.
-5.
-6. Feature 1: The 'webapp' main landing page that displays various tools. This page is  on your local development server located at http://127.0.0.1:8000/
+   ![Add Post](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Add%20Post.png)
 
+4. Ability to change a post for the blog page.
 
-Screenshots
+   ![Change Post](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Change%20Post.png)
 
-## Credits
+6. View a list of blog posts. http://127.0.0.1:8000/blog/
 
+   ![View Posts](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/View%20Blog%20Posts.png)
 
+7.  Open a blog posts.
 
+    ![Open Posts](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Open%20Blog%20Posts.png)
+
+**Polls App**
+1. Ability to create poll questions and choices. http://127.0.0.1:8000/admin/ 
+
+   ![Manage Polls](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Polls%20Admin.png)
+   
+2. Ability to add poll questions.
+
+   ![Add Poll Questions](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Add%20Questions.png)
+
+4. Ability to change poll questions.
+
+   ![Change Poll Questions](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Change%20Questions.png)
+
+6. Ability to add poll choices.
+
+   ![Add Choices](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Add%20Choice.png)
+
+8. Ability to change poll choices.
+
+   ![Change Choices](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Change%20Choice.png)
+   
+10. Polls Login Page. http://127.0.0.1:8000/polls/auth/login/
+
+    ![Login Page](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Polls%20Login.png)
+  
+12. Polls Signup page.
+
+    ![Signup Page](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Polls%20Signup.png)
+
+14. Polls Homepage. http://127.0.0.1:8000/polls/
+
+    ![Polls homepage](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Polls%20Homepage.png)
+
+16. Polls Voting.
+
+    ![Polls Voting](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Polls%20Choice.png)
+
+18. Polls Results. http://127.0.0.1:8000/polls/3/results/ 
+
+    ![Polls Results](https://github.com/DarrylA09/Darryl-s-First-Projects/blob/master/Screenshots/Polls%20Results.png)
+
+## URL To GitHub Repository
+
+Here is a link to access the GitHub repository
+
+[GitHub Repository Darryls First Projects](https://github.com/DarrylA09/Darryl-s-First-Projects)
