@@ -94,11 +94,15 @@ Bootsrap
 **Step 2: Here are the key features of the project: 
 
 **Blog App
-1. 
-2.
-3.
+1. http://127.0.0.1:8000/admin/  for admin
+2. http://127.0.0.1:8000/blog/ - to view blog posts
+3. http://127.0.0.1:8000/polls/auth/login/ polls login
+
+http://127.0.0.1:8000/polls/  polls home page
+http://127.0.0.1:8000/polls/3/results/   - poll results
 4.
-5. Feature 1: The 'webapp' main landing page that displays various tools. This page is  on your local development server located at http://127.0.0.1:8000/
+5.
+6. Feature 1: The 'webapp' main landing page that displays various tools. This page is  on your local development server located at http://127.0.0.1:8000/
 
 
 Screenshots
