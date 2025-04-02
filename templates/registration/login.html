@@ -27,7 +27,7 @@
     <p class="h6 text-primary">If you do not have an account, please click Signup.</p>
     <br/>
     <!-- This is the form for a user to login -->
-    <form action="{% url 'polls:authenticate_user' %}" method="post">
+    <form action="{% url 'polls:login' %}" method="post">
         {% csrf_token %}
         <label class="text-primary">Username</label>
         <div class="col-2">

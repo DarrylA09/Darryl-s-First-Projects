@@ -30,40 +30,25 @@ def signup(request):
     return render(request, 'polls/signup.html', {'form': form})
 
 
-def user_login(request):
-    '''
-    This function renders the login page.
-    '''
-    return render(request, 'registration/login.html')
-
-
-def authenticate_user(request):
-    '''
-    This function authenticates the user.
-    '''
+def login_user(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
 
         if not username or not password:
-            # Handle missing username or password
             return render(request, 'registration/login.html', {
                 'error_message': 'Username and password are required.'
             })
 
         user = authenticate(username=username, password=password)
-
-        # If user is None, then the user is not authenticated. Redirect
-        # the user to the login page. 
         if user is None:
-            return HttpResponseRedirect(reverse('polls:login'))
-        # If user is authenticated, then log the user in and redirect the
-        # user to the poll home page.
+            return render(request, 'registration/login.html', {
+                'error_message': 'Invalid username or password.'
+            })
         else:
             login(request, user)
             return HttpResponseRedirect(reverse('polls:index'))
-    else:
-        return HttpResponseRedirect(reverse('polls:login'))
+    return render(request, 'registration/login.html')
 
 
 def detail(request, question_id):
