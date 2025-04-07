@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .models import Question, Choice
@@ -51,6 +52,7 @@ def login_user(request):
     return render(request, 'registration/login.html')
 
 
+@login_required
 def detail(request, question_id):
     """
     This function returns the question with the given question_id.
@@ -59,6 +61,7 @@ def detail(request, question_id):
     return render(request, 'polls/detail.html', {'question': question})
 
 
+@login_required
 def results(request, question_id):
     """
     This function returns the results of the question with the given 
@@ -68,6 +71,7 @@ def results(request, question_id):
     return render(request, 'polls/results.html', {'question': question})
 
 
+@login_required
 def vote(request, question_id):
     """
     This function increments the vote count of the selected choice.
